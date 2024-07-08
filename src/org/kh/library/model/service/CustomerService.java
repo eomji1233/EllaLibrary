@@ -1,11 +1,11 @@
 package org.kh.library.model.service;
 
-import java.util.ArrayList;
+import java.util.*;
 
 import org.kh.library.model.vo.Customer;
 
 public interface CustomerService {
-	public ArrayList<Customer> selectAllCustomer();
+	public List<Customer> selectAllCustomer();
 	public Customer selectNameSearch(String CName);
 	public Customer selectIdSearch(String CId);
 	public int insertCustomer(Customer customer);
